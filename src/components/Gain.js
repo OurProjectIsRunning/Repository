@@ -1,4 +1,4 @@
-function Header() {
+function Gain() {
     return (
         <div className="Gain">
             <img src="./social_profile.png" />
@@ -16,4 +16,4 @@ function Header() {
     )
 }
 
-export default Header;
+export default Gain;
