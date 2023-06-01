@@ -5,7 +5,6 @@ import Main from './Main';
 function Section() {
     return (
         <div className="Section">
-            <h1>아잉</h1>
             <BrowserRouter>
                 <Routes>
                     <Route path="/Gain" element={<Gain />}></Route>
