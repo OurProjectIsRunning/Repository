@@ -1,0 +1,105 @@
+.Main {
+    display: flex;
+    flex-wrap: wrap;
+    .card:hover {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 16px 0px;
+    }
+    .card {
+        transition: box-shadow 0.25s ease-in 0s, transform 0.25s ease-in 0s;
+        width: 20rem;
+        background: white;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 16px 0px;
+        margin: 1rem;
+        .linkimg {
+            display: block;
+        }
+        .imgholder {
+            width: 100%;
+            position: relative;
+        }
+        .img {
+            width: 100%;
+            display: block;
+            border-radius: 4px 4px 0px 0px;
+        }
+        .texts {
+            height: 133px;
+            padding: 16px;
+            .title {
+                width: 288px;
+                height: 24px;
+                margin: 0px 0px 4px;
+                line-height: 1.5;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .content p {
+                width: 288px;
+                height: 63px;
+                margin: 0px 0px 24px;
+                font-size: 0.875rem;
+                line-height: 1.5;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+            .info {
+                width: 288px;
+                height: 18px;
+                font-size: 0.75rem;
+                line-height: 1.5;
+                color: #868e96;
+                .seperator {
+                    margin-left: 0.25rem;
+                    margin-right: 0.25rem;
+                }
+            }
+        }
+        .foot {
+            padding: 0.625rem 1rem;
+            border-top: 1px solid #f1f3f5;
+            display: flex;
+            font-size: 0.75rem;
+            line-height: 1.5;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            .user {
+                text-decoration: none;
+                color: inherit;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                .userimg {
+                    object-fit: cover;
+                    border-radius: 50%;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    display: block;
+                    margin-right: 0.5rem;
+                }
+                .username {
+                    color: #868e96;
+                }
+            }
+            .likes {
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                svg {
+                    width: 0.75rem;
+                    height: 0.75rem;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
