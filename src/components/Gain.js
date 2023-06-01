@@ -1,17 +1,19 @@
 function Gain() {
     return (
         <div className="Gain">
-            <img src="./social_profile.png" />
-            <p>Deterism</p>
-            <p>아잉의 음운의 개수는 3개</p>
+            <p>
+                <img src="./social_profile.png" />
+                Deterism<br />
+                아잉의 음운의 개수는 3개
+            </p>
             <hr />
             <a>글</a>
             <a>시리즈</a>
             <a>소개</a>
-            <input type="text"></input>
+            <input type="text" placeholder="검색어를 입력하세요"></input>
             <a>태그 목록</a>
             <br />
-            <a>전체보기 (0)</a>
+            <button>전체보기 (0)</button>
         </div>
     )
 }
