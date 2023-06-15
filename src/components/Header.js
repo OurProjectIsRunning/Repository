@@ -1,9 +1,17 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import GainHeader from "./GainHeader";
+
 function Header() {
-    return (
-        <div className="Header">
-            <h1>아잉</h1>
-        </div>
-    )
+  return (
+    <div className="Header">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/Gain" element={<GainHeader />}></Route>
+          <Route path="/Main" element={<></>}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default Header;
