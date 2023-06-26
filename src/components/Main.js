@@ -1,13 +1,12 @@
 import "./styles/Main.scss"
-import Cards from "./MainContents/Cards"
-import Card from "./MainContents/Card";
+import SubHeader from "./MainContents/SubHeader"
+import Grid from "./MainContents/Grid";
 
 function Main() {
     return (
         <div className="Main">
-            {Cards.map(card => (
-                <Card card={card} key={card.id}/>
-            ))}
+            <SubHeader />
+            <Grid />
         </div>
     )
 }
