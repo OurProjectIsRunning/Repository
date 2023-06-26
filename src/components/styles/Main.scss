@@ -1,3 +1,11 @@
+body {
+    margin: 0;
+}
+
+.App {
+    background-color: #f7f9fb;
+}
+
 .Grid {
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +125,7 @@
 }
 
 .SubHeader {
-    margin: 24px 70px 12px;
+    margin: 0 80px 15px;
     height: 48px;
     width: 1376px;
     display: flex;
@@ -125,30 +133,32 @@
     .left {
         display: flex;
         align-items: center;
+        margin-top: -4px;
+        cursor: pointer;
         .sort {
             display: flex;
             position: relative;
             width: 14rem;
-        }
-        .sort a {
-            width: 7rem;
-            display: flex;
-            -webkit-box-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            justify-content: center;
-            font-size: 1.125rem;
-            text-decoration: none;
-            color: #868e96;
-            height: 3rem;
-        }
-        .sort .selected {
-            color: #212529;
-            font-weight: bold;
-        }
-        .sort a svg {
-            font-size: 1.5rem;
-            margin-right: 0.5rem;
+            a {
+                width: 7rem;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                font-size: 1.125rem;
+                text-decoration: none;
+                color: #868e96;
+                height: 3rem;
+                svg {
+                    font-size: 1.5rem;
+                    margin-right: 0.5rem;
+                }
+            }
+            .selected {
+                color: #212529;
+                font-weight: bold;
+            }
         }
         .underline {
             width: 50%;
@@ -174,12 +184,72 @@
             font-size: 0.875rem;
             box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 4px;
             cursor: pointer;
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
         }
     }
     .info {
+        margin: auto 0;
         .more {
             cursor: pointer;
             font-size: 1.5rem;
+            color: #868e96;
+        }
+    }
+}
+
+.Header {
+    margin: 0 80px 30px;
+    padding-top: 20px;
+    height: 40px;
+    width: 1405px;
+    display: flex;
+    justify-content: space-between;
+    .velog {
+        cursor: pointer;
+    }
+    .tools {
+        margin-top: -14px;
+        display: flex;
+        vertical-align: middle;
+        * {
+            margin: auto 10px;
+            cursor: pointer;
+        }
+        .new {
+            height: 2rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-size: 1rem;
+            border-radius: 1rem;
+            outline: none;
+            font-weight: bold;
+            word-break: keep-all;
+            background: #f8f9fa;
+            border: 1px solid #212529;
+            color: #212529;
+        }
+        .user {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+        .user img {
+            display: block;
+            height: 2.5rem;
+            width: 2.5rem;
+            margin-left: 0.15rem;
+            box-shadow: rgba(0, 0, 0, 0.086) 0px 0px 8px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .user svg {
+            font-size: 1.5rem;
+            margin-top: 0.45rem;
+            margin-left: -0.35rem;
+            margin-right: 0.75rem;
             color: #868e96;
         }
     }

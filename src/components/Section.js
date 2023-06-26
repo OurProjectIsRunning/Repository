@@ -8,7 +8,7 @@ function Section() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/Gain" element={<Gain />}></Route>
-                    <Route path="/Main" element={<Main />}></Route>
+                    <Route path="/" element={<Main />}></Route>
                 </Routes>
             </BrowserRouter>
         </div>
