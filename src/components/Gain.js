@@ -3,10 +3,12 @@ import "./styles/Gain.scss";
 import Letter from "./GainContents/Letter";
 import Series from "./GainContents/Series";
 import About from "./GainContents/About";
+import GainHeader from "./GainContents/GainHeader";
 
 function Gain() {
   return (
     <div className="Gain">
+      <GainHeader />
       <div className="profile-all">
         <div className="profile">
           <img className="profile-img" src="./social_profile.png" />
@@ -19,7 +21,6 @@ function Gain() {
         <div className="vline" />
       </div>
       <div className="lookall">
-        <div className="lookall-vline" />
         <div className="lookall-script">
           <a className="lookall-tag">글</a>
         </div>
@@ -29,16 +30,6 @@ function Gain() {
         <div className="lookall-script">
           <a className="lookall-tag">소개</a>
         </div>
-      </div>
-
-      <div class="tagList">
-        <div class="title">태그 목록</div>
-        <ul>
-          <li class="showAll">
-            전체보기
-            <span>(0)</span>
-          </li>
-        </ul>
       </div>
 
       <Routes>
