@@ -7,7 +7,7 @@ function Header() {
       <BrowserRouter>
         <Routes>
           <Route path="/Gain" element={<GainHeader />}></Route>
-          <Route path="/Main" element={<></>}></Route>
+          <Route path="/Main" element={<SubHeader />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

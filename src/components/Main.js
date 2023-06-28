@@ -1,12 +1,15 @@
+import "./styles/Main.scss";
+import SubHeader from "./MainContents/SubHeader";
+import Grid from "./MainContents/Grid";
+import MainHeader from "./MainContents/MainHeader";
+
 function Main() {
-    return (
-        <div className="Main">
-            <h1>메인 페이지 들어갈 예정
-                공사중
-                잠시 소란이 있었어요
-            </h1>
-        </div>
-    )
+  return (
+    <div className="Main">
+      <MainHeader />
+      <Grid />
+    </div>
+  );
 }
 
 export default Main;
