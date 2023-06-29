@@ -1,13 +1,13 @@
 export default function Card({card}) {
     return (
         <div className="card" key={card.id}>
-            {card.img && <a className="linkimg" href={card.link}>
+            {card.img && <a className="linkimg" href={`https://velog.io${card.link}`}>
                 <div className="imgholder">
                     <img className="img" src={card.img} alt={card.title}/>
                 </div>
             </a>}
             <div className="texts">
-                <a className="linktext" href={card.link}>
+                <a className="linktext" href={`https://velog.io${card.link}`}>
                     <h4 className="title">{card.title}</h4>
                     <div className="content">
                         <p>{card.content}</p>
@@ -21,7 +21,7 @@ export default function Card({card}) {
             </div>
             {!card.img && <div className="empty"></div>}
             <div className="foot">
-                <a className="user" href={card.link}>
+                <a className="user" href={`https://velog.io${card.link}`}>
                     <img className="userimg" src={card.userinfo.userimg} alt={card.userinfo.username} />
                     <span className="by">by</span>&nbsp;<span className="username">{card.userinfo.username}</span>
                 </a>
